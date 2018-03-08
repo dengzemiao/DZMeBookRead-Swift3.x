@@ -219,7 +219,7 @@ class DZMReadMenu: NSObject,UIGestureRecognizerDelegate {
     
     /// 手势拦截
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
-        
+       
         let classString = String(describing: type(of: touch.view!))
  
         if ClassString.contains(classString) {
