@@ -90,8 +90,6 @@ class DZMReadConfigure: NSObject {
         
         var dict = allPropertys()
         
-        dict.removeValue(forKey: "lineSpacing")
-        
         dict.removeValue(forKey: "textColor")
         
         DZMUserDefaults.setObject(dict, key: DZMReadConfigureKey)
